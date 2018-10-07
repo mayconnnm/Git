@@ -1,0 +1,75 @@
+cd 'nome do arquivo" Ex: cd Documentos -> entra no arquivo desejado
+
+cd .. -> retorna para o arquivo anterior
+
+git init -> cria um novo repositório
+
+ls -> mostra todos os arquivos existentes
+
+git status -> mostra todos os arquivos que não foram comitados ou sofreram modificações
+
+git clone file:////caminho/para/o/repositório -> cria uma cópia do projeto em um repositório local
+
+git clone usuário@servidor:/caminho/para/o/repositório -> cria uma cópia do repositório quando usar um servidor remoto
+
+git add "nome do arquivo" -> adiciona o arquivo para o segundo local de operações "Staging area"
+
+git add . -> adiciona todos os arquivos para o segundo local de operações "Staging area"
+
+git add *."tipo do arquivo" Ex: git add *.txt -> adiciona todos os arquivos do mesmo tipo para o segundo local de operações "staging area"
+
+git commit -m "deixe uma mensagem" -> confirma as mudanças e passa os arquivos para o repositório, ou seja, faz um commit
+
+git commit -a -m "deixa uma menssagem" -> confirma as mudanças e passa os arquivos direto para o repositório, sem passar pelo staging área
+
+git push origin master -> envia arquivos do repositório local para um repositório remoto
+
+git remote add origin -> caso não tenha clonado um repositório existente e queira conectar a um servidor remoto
+
+git pull origin master -> atualiza o repositório local
+
+git diff -> mostra todas as alterações que foram feitas, quando o arquivo ainda estiver no working directory
+
+git diff --staged ->  mostra todas as alterações que foram feitas, quando o arquivo ainda estiver no staging area
+
+git log -> mostra o histórico de todos os commits
+
+git log -p -> além de mostrar o histórico de todos os commits, também mostra as alterações de cada arquivo
+
+git log -p -1 -> mostra o último commit que foi relizado e quais alterações foram feitas 
+
+gitk -> da um relatório todo detalhado em uma interface gráfica
+
+git log --pretty=oneline -> mostra o código do commit e a menssagem
+
+git commit --amend -m "menssagem" -> edita o último git feito, adicionando novos arquivos ou editando algum que já tenha no repositório 
+
+git reset head "nome do arquivo" -> remove o arquivo do staging área
+
+git checkout "nome da branch" "nome do arquivo" -> caso queira alterar o arquivo para a versão que está salva no git
+
+git tag -> lista todas as tags
+
+git tag -a "nome da tag" "chave da tag" -m "descricao da tag" -> para criar uma tag (atalho), usado para criar um atalho de uma versão
+
+git show -> mostra as últimas modificações feitas na versão
+
+git show "nome da tag" -> mostra tudo sobre a tag
+
+git checkout "nome da tag" -> para usar uma versao do repositorio
+
+git checkout master -> volta para versao master do sistema
+
+git branch "nome do branch" -> para criar um novo branch(ambiente)
+
+git checkout "nome do branch" -> troca o branch do working directory
+
+git checkout -b "nome do branch" -> cria e troca automaticamente para um novo branch
+
+git branch -d "nome do branch" -> deleta um branch
+
+git merge "nome do branch origem" -> sincroniza as informações do branch origem passando para o branch master
+
+git init --bare -> cria um repositório compartilhado para outras pessoas acessarem no servidor
+
+ssh-keygen -> cria uma chave para dar permissão para seu computador acessar seu repositório no git hub
